@@ -83,16 +83,35 @@ footer{padding:48px 0 110px;color:var(--mu);font-size:15px}.fg{display:flex;just
 .js .rv{opacity:0;transform:translateY(16px);transition:opacity .7s,transform .7s}.js .rv.in2{opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}.js .rv{opacity:1;transform:none}}
 </style>
+<style>
+.hero{position:relative;overflow:hidden;background:radial-gradient(900px 480px at 85% -10%,var(--tint),transparent 60%),radial-gradient(700px 400px at 0% 110%,var(--tint),transparent 55%)}
+.hero .w{position:relative;z-index:1}
+.wm{position:absolute;right:-60px;top:20px;width:560px;height:560px;color:var(--a);opacity:.07;pointer-events:none;will-change:transform}
+.wm svg{width:100%;height:100%;stroke-width:.5}
+.pill{display:inline-flex;gap:8px;align-items:center;font:600 14px/1 var(--sans);color:var(--at);background:#fff;border:1px solid var(--ln);padding:9px 14px;border-radius:999px;margin-bottom:22px}
+.pill:before{content:"";width:8px;height:8px;border-radius:50%;background:var(--a);box-shadow:0 0 0 4px var(--tint)}
+.trust{display:inline-flex;gap:10px;align-items:baseline;margin-top:22px;padding:12px 16px;background:#fff;border:1px solid var(--ln);border-radius:14px;font-size:15px;color:var(--mu)}
+.trust b{color:var(--tx);font-size:22px;font-variant-numeric:tabular-nums}
+#pg{position:fixed;left:0;top:0;height:3px;width:0;background:var(--a);z-index:60}
+.js .hero .pill,.js .hero h1,.js .hero .lede,.js .hero .cta,.js .hero .facts,.js .hero .trust,.js .hero .card{animation:up .8s cubic-bezier(.2,.7,.2,1) backwards}
+.js .hero .pill{animation-delay:.05s}.js .hero h1{animation-delay:.15s}.js .hero .lede{animation-delay:.3s}.js .hero .cta{animation-delay:.42s}.js .hero .facts{animation-delay:.52s}.js .hero .trust{animation-delay:.6s}.js .hero .card{animation-delay:.35s}
+@keyframes up{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+.bx:hover{box-shadow:0 18px 40px -22px var(--a)}.card{box-shadow:0 30px 60px -30px #0003}.btn{box-shadow:0 10px 24px -12px var(--a)}
+@media(prefers-reduced-motion:reduce){.js .hero .pill,.js .hero h1,.js .hero .lede,.js .hero .cta,.js .hero .facts,.js .hero .trust,.js .hero .card{animation:none;opacity:1}}
+@media(max-width:759px){.wm{width:360px;height:360px;right:-90px}}
+.btn.sm{white-space:nowrap}@media(max-width:480px){.logo{font-size:18px}.btn.sm{padding:10px 12px;font-size:14px}.btn.sm svg{display:none}}
+</style>
 </head><body>
+<div id="pg"></div>
 <a class="skip" href="#quote">Skip to quote</a>
 <div class="note">Concept preview prepared for Jax Elite Home Services. This site is not live yet.</div>
 <header><div class="w nav"><a class="logo" href="#top"><i><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/></svg></i>Jax Elite Home Services</a>
 <nav class="links" aria-label="Main"><a href="#services">Services</a><a href="#included">What's included</a><a href="#how">How it works</a><a href="#faq">FAQ</a></nav>
 <a class="btn sm" href="tel:+19044848288"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg> (904) 484-8288</a></div></header>
 <main id="top">
-<div class="hero"><div class="w hg"><div><h1>Dirt gone. Curb appeal <em>back</em>.</h1><p class="lede">Pressure washing and soft washing in Jacksonville, FL for houses, driveways, decks and more.</p>
+<div class="hero"><div class="wm" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/></svg></div><div class="w hg"><div><div class="pill">Pressure Washing in Jacksonville, FL</div><h1>Dirt gone. Curb appeal <em>back</em>.</h1><p class="lede">Pressure washing and soft washing in Jacksonville, FL for houses, driveways, decks and more.</p>
 <div class="cta"><a class="btn" href="#quote">Get a free quote <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn ghost" href="tel:+19044848288">Call (904) 484-8288</a></div>
-<div class="facts"><span><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg> Free quotes</span><span><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg> Homes and businesses</span><span><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg> Fast scheduling</span></div></div>
+<div class="facts"><span><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg> Free quotes</span><span><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg> Homes and businesses</span><span><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg> Fast scheduling</span></div><div class="trust"><b data-count="297">297</b> reviews on Google</div></div>
 <div class="card" aria-label="Example checklist"><h3><span>Your wash checklist</span><span id="pc">0 / 5</span></h3><ul class="rm" id="rm"><li><i class="tk"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i><span>Surface inspected</span></li><li><i class="tk"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i><span>Pre-treated for stains</span></li><li><i class="tk"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i><span>Washed at the right pressure</span></li><li><i class="tk"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i><span>Rinsed and cleaned up</span></li><li><i class="tk"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i><span>Final walkthrough</span></li></ul><div class="prog"><b id="pb"></b></div></div></div></div>
 <section id="services"><div class="w"><div class="eyebrow rv">Services</div><h2 class="rv">What we <em>do</em>.</h2><p class="sub rv">Pick what you need and we'll tailor the job to you.</p><div class="bento"><a class="bx big rv" href="#quote" data-pick="House wash"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/></svg></div><h3>House washing</h3><p>Gentle soft washing that lifts dirt, algae and mildew from siding.</p><span class="go">Choose this <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a><a class="bx sm2 rv" href="#quote" data-pick="Driveway & concrete"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 20c3 0 5-1 5-3l9-9-3-3-9 9c-2 0-2 3-2 6zM15 6l3 3"/></svg></div><h3>Driveways & concrete</h3><p>Restore walkways, driveways and patios.</p><span class="go">Choose this <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a><a class="bx sm2 rv" href="#quote" data-pick="Deck & fence"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5L18 18M18 6l-2.5 2.5M8.5 15.5L6 18"/></svg></div><h3>Decks & fences</h3><p>Bring wood and composite surfaces back to life.</p><span class="go">Choose this <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a><a class="bx big rv" href="#quote" data-pick="Roof & gutters"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 19c0-8 5-14 15-14 0 10-6 15-14 15M5 19l8-8"/></svg></div><h3>Roof & gutters</h3><p>Safe cleaning for roofs, gutters and soffits.</p><span class="go">Choose this <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></div></div></section>
 <section class="dark" id="included"><div class="w"><div class="eyebrow rv">What's included</div><h2 class="rv">See what each job <em>covers</em>.</h2>
@@ -127,5 +146,10 @@ function render(){var rows=F.map(function(f){var v=S[f.k];return [f.l.replace(' 
  var msg='Hi '+NAME+', I would like a quote.\n'+rows.map(function(r){return r[0]+': '+r[1]}).join('\n')+(dt.value?'\nPreferred date: '+dt.value:'')+(nm.value?'\nName: '+nm.value:'');
  if(EMAIL){send.href='mailto:'+EMAIL+'?subject='+encodeURIComponent('Quote request')+'&body='+encodeURIComponent(msg);hint.textContent='Opens an email to '+NAME+' with your details.'}
  else{send.href='sms:'+TEL+'?&body='+encodeURIComponent(msg);hint.textContent='Opens a text message to '+NAME+' with your details.'}}
+(function(){var pg=document.getElementById('pg'),wm=document.querySelector('.wm'),rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+ function s(){var h=document.documentElement;pg.style.width=(h.scrollTop/((h.scrollHeight-h.clientHeight)||1)*100)+'%';if(wm&&!rm)wm.style.transform='translateY('+(h.scrollTop*.15)+'px)'}
+ addEventListener('scroll',s,{passive:true});s()})();
+document.querySelectorAll('[data-count]').forEach(function(el){var n=+el.dataset.count;if(matchMedia('(prefers-reduced-motion:reduce)').matches)return;el.textContent='0';var done=0;
+ new IntersectionObserver(function(e,o){if(e[0].isIntersecting&&!done){done=1;o.disconnect();var t0=performance.now();(function f(t){var k=Math.min((t-t0)/1200,1);el.textContent=Math.round(n*(1-Math.pow(1-k,3)));if(k<1)requestAnimationFrame(f)})(t0)}}).observe(el)});
 render();
 </script></body></html>
